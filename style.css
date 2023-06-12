@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,800;1,300;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: gray;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 12px;
+  border-bottom-right-radius: 100px;
+  padding: 36px;
+  max-width: 560px;
+  margin: auto;
+}
+
+.wrapper-date-field {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.date-field label {
+  display: block;
+  font-weight: 500;
+  color: hsl(0, 1%, 44%);
+  text-transform: uppercase;
+}
+
+.date-field input:focus-visible {
+  border-color: hsl(259, 100%, 65%);
+  outline: hsl(259, 100%, 65%);
+}
+
+.date-field input {
+  border-radius: 6px;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.half-content {
+  display: flex;
+  align-items: center;
+}
+
+.half-content div {
+  border-top: 0.5px solid hsl(0, 0%, 86%);
+  width: 100%;
+}
+
+.half-content svg {
+  background-color: black;
+  border-radius: 100px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-date-field {
+  margin-top: 10px;
+}
+
+.date-text {
+  display: flex;
+  gap: 4px;
+}
+
+.date-text p {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.date-text p.date-number {
+  color: hsl(259, 100%, 65%);
+}
+
+.date-text p.date {
+  color: hsl(0, 0%, 8%);
+  font-style: italic;
+}
